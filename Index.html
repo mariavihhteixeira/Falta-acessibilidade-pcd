@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Acessível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Nosso Site Acessível</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" tabindex="1">Início</a></li>
+                <li><a href="#about" tabindex="2">Sobre</a></li>
+                <li><a href="#contact" tabindex="3">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <img src="acessibilidade.jpg" alt="Imagem ilustrativa de acessibilidade" />
+            <p>Nosso objetivo é garantir que todos possam acessar e utilizar nossos conteúdos com facilidade.</p>
+        </section>
+
+        <section id="about">
+            <h2>O que é Acessibilidade?</h2>
+            <p>Acessibilidade é a prática de tornar ambientes, produtos e serviços utilizáveis por todas as pessoas, incluindo aquelas com deficiência.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" aria-required="true" />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" aria-required="true" />
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" aria-required="true"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
